@@ -27,7 +27,7 @@ class FacebookTokenStrategy extends OAuth2Strategy {
   constructor(_options, _verify) {
     const options = _options || {};
     const verify = _verify;
-    const _fbGraphVersion = options.fbGraphVersion || 'v2.6';
+    const _fbGraphVersion = options.fbGraphVersion || 'v3.2';
 
 
     options.authorizationURL = options.authorizationURL || `https://www.facebook.com/${_fbGraphVersion}/dialog/oauth`;
